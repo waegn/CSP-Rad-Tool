@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room-by-Room Radiator & ΔT Sizing Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Radiator & ΔT Room Sizing Tool</h1>
+
+<table id="roomsTable">
+  <thead>
+    <tr>
+      <th>Room</th>
+      <th>Type</th>
+      <th>Width (m)</th>
+      <th>Length (m)</th>
+      <th>ΔT</th>
+      <th>Rad Type</th>
+      <th>Height (mm)</th>
+      <th>Length (mm)</th>
+      <th>Required (W)</th>
+      <th>Installed (W)</th>
+      <th>%</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="roomRows"></tbody>
+</table>
+
+<button onclick="addRoom()">➕ Add Room</button>
+
+<h2 id="totalSummary"></h2>
+
+<script src="script.js"></script>
+</body>
+</html>
